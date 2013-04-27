@@ -129,7 +129,8 @@ package examples {
 			var modelMarioMerah:ObjectContainer3D = colladaMarioMerah.parseGeometry(MarioDae) as ObjectContainer3D;
 			modelMarioMerah.materialLibrary.getMaterial("FF_FF_FF_mario1").material = new BitmapMaterial(Cast.bitmap(MarioTextureRedBlue));
 			modelMarioMerah.mouseEnabled = false;
-			modelMarioMerah.rotationX = 90;
+			modelMarioMerah.rotationX = 180;
+			modelMarioMerah.rotationZ = 180;
 			
 			// create a container for the model, that will accept matrix transformations.
 			this.modelContainerMarioMerah = new ObjectContainer3D();
@@ -144,7 +145,8 @@ package examples {
 			var modelMarioIjo:ObjectContainer3D = colladaMarioIjo.parseGeometry(MarioDae) as ObjectContainer3D;
 			modelMarioIjo.materialLibrary.getMaterial("FF_FF_FF_mario1").material = new BitmapMaterial(Cast.bitmap(MarioTextureGreenRed));
 			modelMarioIjo.mouseEnabled = false;
-			modelMarioIjo.rotationX = 90;
+			modelMarioIjo.rotationX = 180;
+			modelMarioIjo.rotationZ = 180;
 			
 			// create a container for the model, that will accept matrix transformations.
 			this.modelContainerMarioIjo = new ObjectContainer3D();
